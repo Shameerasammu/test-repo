@@ -1,0 +1,1672 @@
+
+ 
+
+<body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Friends</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="stylesz.css">
+
+</head>
+<style>
+
+
+
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8f8f6;
+
+    color:#1f3d2b;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   SCROLL BAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#c5a46d;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:92%;
+
+    max-width:1300px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(0,0,0,.06);
+
+    border-radius:50px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:42px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#1f3d2b;
+
+}
+
+.logo span{
+
+    color:#c7a165;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:35px;
+
+    list-style:none;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#1f3d2b;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#c7a165;
+
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.dropdown{
+
+    position:relative;
+
+}
+
+.dropdown-menu{
+
+    position:absolute;
+
+    top:50px;
+
+    left:0;
+
+    width:220px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.08);
+
+    display:none;
+
+    overflow:hidden;
+
+}
+
+.dropdown-menu li{
+
+    list-style:none;
+
+}
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:15px 20px;
+
+    color:#333;
+
+}
+
+.dropdown-menu a:hover{
+
+    background:#f8f8f8;
+
+    color:#c7a165;
+
+}
+
+.dropdown:hover .dropdown-menu{
+
+    display:block;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.friends-hero{
+
+    width:92%;
+
+    max-width:1200px;
+
+    margin:150px auto 70px;
+
+}
+
+.hero-card{
+
+    background:#fff;
+
+    border-radius:35px;
+
+    padding:70px;
+
+    text-align:center;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.mini-title{
+
+    letter-spacing:4px;
+
+    color:#b38a4d;
+
+    font-size:13px;
+
+}
+
+.hero-card h1{
+
+    margin-top:20px;
+
+    font-size:75px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#1f3d2b;
+
+}
+
+.gold-line{
+
+    width:120px;
+
+    height:3px;
+
+    background:#c7a165;
+
+    margin:30px auto;
+
+    border-radius:20px;
+
+}
+
+.hero-text{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+.friends-section{
+
+    width:92%;
+
+    max-width:1200px;
+
+    margin:70px auto;
+
+}
+
+.glass-card{
+
+    background:#fff;
+
+    padding:45px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#1f3d2b;
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:40px;
+
+}
+
+
+/* ===========================
+   FRIENDS GRID
+=========================== */
+
+.friends-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+/* ===========================
+   FRIEND CARD
+=========================== */
+
+.friend-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:35px 30px;
+
+    text-align:center;
+
+    border:1px solid #ececec;
+
+    transition:all .4s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Gold Top Border */
+
+.friend-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        #b68b4c,
+        #f4d8a2,
+        #b68b4c
+    );
+
+}
+
+/* Hover */
+
+.friend-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.12);
+
+}
+
+/* Light Shine */
+
+.friend-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120%;
+
+    left:-60%;
+
+    width:60%;
+
+    height:250%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:rotate(25deg);
+
+    transition:.8s;
+
+}
+
+.friend-card:hover::after{
+
+    left:130%;
+
+}
+
+/* ===========================
+   PHOTO
+=========================== */
+
+.friend-photo{
+
+    width:145px;
+
+    height:145px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid #d4b27b;
+
+    background:#fff;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.friend-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.friend-card:hover .friend-photo img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   NAME
+=========================== */
+
+.friend-card h3{
+
+    margin-top:22px;
+
+    font-size:30px;
+
+    color:#1f3d2b;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+/* ===========================
+   DESIGNATION
+=========================== */
+
+.friend-role{
+
+    margin-top:10px;
+
+    color:#b68b4c;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+/* ===========================
+   DESCRIPTION
+=========================== */
+
+.friend-card p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.friend-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+.friend-icons a{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:#f5f5f5;
+
+    color:#b68b4c;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+.friend-icons a:hover{
+
+    background:#b68b4c;
+
+    color:#fff;
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   CARD ANIMATION
+=========================== */
+
+.friend-card{
+
+    animation:fadeUp .8s ease both;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ===========================
+   QUOTE SECTION
+=========================== */
+
+.quote-card{
+
+    background:#ffffff;
+
+    border-radius:30px;
+
+    padding:70px 40px;
+
+    text-align:center;
+
+    border:1px solid #ececec;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.quote-icon{
+
+    font-size:70px;
+
+    color:#c7a165;
+
+    margin-bottom:20px;
+
+}
+
+.quote-card h2{
+
+    font-size:46px;
+
+    color:#1f3d2b;
+
+    font-family:'Cormorant Garamond',serif;
+
+    margin-bottom:20px;
+
+}
+
+.quote-card p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:2;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+.friends-footer{
+
+    margin-top:70px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.friends-footer span{
+
+    color:#c7a165;
+
+    margin:0 10px;
+
+}
+
+/* ===========================
+   TOP BUTTON
+=========================== */
+
+.top-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1f3d2b;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.18);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+.top-btn:hover{
+
+    background:#c7a165;
+
+    transform:translateY(-6px);
+
+}
+
+/* ===========================
+   SECTION SPACING
+=========================== */
+
+.glass-card{
+
+    margin-bottom:55px;
+
+}
+
+/* ===========================
+   TITLE EFFECT
+=========================== */
+
+.section-title{
+
+    position:relative;
+
+    display:inline-block;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-12px;
+
+    transform:translateX(-50%);
+
+    width:80px;
+
+    height:3px;
+
+    background:#c7a165;
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   HOVER EFFECT
+=========================== */
+
+.friend-card:hover h3{
+
+    color:#c7a165;
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   IMAGE SHADOW
+=========================== */
+
+.friend-photo{
+
+    transition:.4s;
+
+}
+
+.friend-card:hover .friend-photo{
+
+    box-shadow:
+        0 15px 35px rgba(199,161,101,.25);
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:992px){
+
+.hero-card h1{
+
+    font-size:58px;
+
+}
+
+.section-title{
+
+    font-size:36px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar{
+
+    padding:15px 20px;
+
+    border-radius:20px;
+
+}
+
+.navbar ul{
+
+    gap:18px;
+
+    font-size:14px;
+
+}
+
+.hero-card{
+
+    padding:40px 25px;
+
+}
+
+.hero-card h1{
+
+    font-size:42px;
+
+}
+
+.hero-text{
+
+    font-size:15px;
+
+}
+
+.glass-card{
+
+    padding:30px;
+
+}
+
+.friend-photo{
+
+    width:120px;
+
+    height:120px;
+
+}
+
+.friend-card h3{
+
+    font-size:24px;
+
+}
+
+.quote-card h2{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-card h1{
+
+    font-size:34px;
+
+}
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+.friends-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.friend-card{
+
+    padding:25px;
+
+}
+
+.top-btn{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+.friend-card,
+.glass-card{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.friend-card.show,
+.glass-card.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+</style>
+<body>
+
+<div class="bg-blur"></div>
+<div class="texture"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="logo">
+A<span>&</span>S
+</div>
+
+<div class="menu-toggle">
+☰
+</div>
+
+<ul>
+
+<li><a href="indexz.html">Home</a></li>
+
+
+<li class="dropdown">
+
+<a href="#">
+Friends
+<i class="fa-solid fa-chevron-down"></i>
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a href="#college">🎓 College Friends</a></li>
+
+
+<li><a href="#school">🏫 School Friends</a></li>
+
+<li><a href="#best">❤️ Best Friends</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="indexz.html">Event</a></li>
+
+<li><a href="passport.html">Passport</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="friends-hero">
+
+<div class="glass-card hero-card">
+
+<p class="mini-title">
+
+✦ THE PEOPLE WHO MADE OUR JOURNEY BEAUTIFUL ✦
+
+</p>
+
+<h1>
+
+Our Friends
+
+</h1>
+
+<div class="gold-line"></div>
+
+<p class="hero-text">
+
+Some friends become family.
+
+Every memory, every laugh and every milestone became more meaningful because of them.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= SCHOOL FRIENDS ================= -->
+
+<section id="school" class="friends-section">
+
+<div class="glass-card">
+
+<h2 class="section-title">
+
+🏫 School Friends
+
+</h2>
+
+<div class="friends-grid">
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+<img src="school1.jpg" alt="">
+</div>
+
+<h3>Arshad</h3>
+
+<p>
+More than a friend, family.
+</p>
+
+<div class="friend-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+</div>
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+<img src="school2.jpg" alt="">
+</div>
+
+<h3>Imran</h3>
+
+<p>
+A true brother from another mother.
+</p>
+
+<div class="friend-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+</div>
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+<img src="school3.jpg" alt="">
+</div>
+
+<h3>Niyas</h3>
+
+<p>
+Good times. Crazy memories.
+</p>
+
+<div class="friend-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= COLLEGE ================= -->
+
+<section id="college" class="friends-section">
+
+<div class="glass-card">
+
+<h2 class="section-title">
+
+🎓 College Friends
+
+</h2>
+
+<div class="friends-grid">
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+
+<img src="college1.jpg" alt="">
+
+</div>
+
+<h3>
+
+Abdul Rahman
+
+</h3>
+
+<p>
+
+Always there. Always Real.
+
+</p>
+
+<div class="friend-icons">
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+
+</div>
+
+</div>
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+
+<img src="college2.jpg" alt="">
+
+</div>
+
+<h3>
+
+Mohamed Rizwan
+
+</h3>
+
+<p>
+
+Loyal. Genuine. Irreplaceable.
+
+</p>
+
+<div class="friend-icons">
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+
+</div>
+
+</div>
+
+<!-- Friend -->
+
+<div class="friend-card">
+
+<div class="friend-photo">
+
+<img src="college3.jpg" alt="">
+
+</div>
+
+<h3>
+
+Faisal
+
+</h3>
+
+<p>
+
+Always lifts the mood.
+
+</p>
+
+<div class="friend-icons">
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= BEST FRIENDS ================= -->
+
+<section id="best" class="friends-section">
+
+<div class="glass-card">
+
+<h2 class="section-title">
+
+❤️ Best Friends
+
+</h2>
+
+<div class="friends-grid">
+
+<div class="friend-card">
+
+<div class="friend-photo">
+<img src="best1.jpg" alt="">
+</div>
+
+<h3>Your Best Friend</h3>
+
+<p>
+Every journey is brighter with a true friend.
+</p>
+
+<div class="friend-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+</div>
+
+<div class="friend-card">
+
+<div class="friend-photo">
+<img src="best2.jpg" alt="">
+</div>
+
+<h3>Your Best Friend</h3>
+
+<p>
+Always by my side through every moment.
+</p>
+
+<div class="friend-icons">
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="#"><i class="fa-solid fa-phone"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= QUOTE ================= -->
+
+<section class="friends-section">
+
+<div class="glass-card quote-card">
+
+<div class="quote-icon">
+❝
+</div>
+
+<h2>
+
+Surround yourself with those
+who feel like home.
+
+</h2>
+
+<p>
+
+Friendship isn't about who you've known the longest,
+it's about who stood beside you when it mattered most.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="friends-footer">
+
+<p>
+
+Ahamed Kasim &amp; Shameera
+
+<span>|</span>
+
+10 January 2027
+
+</p>
+
+</footer>
+
+<!-- Scroll Top -->
+
+<button class="top-btn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script>
+
+
+
+    /* ===========================
+SCROLL REVEAL
+=========================== */
+
+const cards = document.querySelectorAll(".friend-card, .glass-card");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+            observer.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+cards.forEach(card => {
+
+    card.style.opacity = "0";
+    card.style.transform = "translateY(60px)";
+    card.style.transition = "all .8s ease";
+
+    observer.observe(card);
+
+});
+
+
+/* ===========================
+SCROLL TO TOP
+=========================== */
+
+const topBtn = document.querySelector(".top-btn");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+
+        topBtn.classList.add("show");
+
+    } else {
+
+        topBtn.classList.remove("show");
+
+    }
+
+});
+
+topBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+});
+
+
+/* ===========================
+NAVBAR EFFECT
+=========================== */
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 80){
+
+        navbar.style.background="rgba(255,255,255,.28)";
+        navbar.style.backdropFilter="blur(30px)";
+        navbar.style.boxShadow="0 15px 40px rgba(0,0,0,.08)";
+
+    }else{
+
+        navbar.style.background="rgba(255,255,255,.18)";
+        navbar.style.boxShadow="none";
+
+    }
+
+});
+
+
+/* ===========================
+MOBILE MENU
+=========================== */
+
+const menuBtn = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".navbar ul");
+
+if(menuBtn){
+
+menuBtn.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+    menuBtn.innerHTML =
+    navMenu.classList.contains("active")
+    ? "✕"
+    : "☰";
+
+});
+
+}
+
+
+/* ===========================
+FLOATING PARTICLES
+=========================== */
+
+function createParticle(){
+
+    const particle=document.createElement("span");
+
+    particle.innerHTML="✦";
+
+    particle.style.position="fixed";
+
+    particle.style.left=Math.random()*window.innerWidth+"px";
+
+    particle.style.top=window.innerHeight+"px";
+
+    particle.style.color="#d4b27b";
+
+    particle.style.opacity=".35";
+
+    particle.style.fontSize=
+    (Math.random()*12+8)+"px";
+
+    particle.style.pointerEvents="none";
+
+    particle.style.transition="8s linear";
+
+    document.body.appendChild(particle);
+
+    setTimeout(()=>{
+
+        particle.style.transform=
+        "translateY(-110vh)";
+
+        particle.style.opacity="0";
+
+    },100);
+
+    setTimeout(()=>{
+
+        particle.remove();
+
+    },9000);
+
+}
+
+setInterval(createParticle,700);
+
+
+/* ===========================
+CARD PARALLAX
+=========================== */
+
+document.querySelectorAll(".friend-card").forEach(card=>{
+
+    card.addEventListener("mousemove",(e)=>{
+
+        const rect=card.getBoundingClientRect();
+
+        const x=e.clientX-rect.left;
+
+        const y=e.clientY-rect.top;
+
+        card.style.transform=
+        `
+        perspective(900px)
+        rotateY(${(x-rect.width/2)/25}deg)
+        rotateX(${-(y-rect.height/2)/25}deg)
+        translateY(-8px)
+        `;
+
+    });
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.transform=
+        "perspective(900px) rotateX(0) rotateY(0)";
+
+    });
+
+});
+
+
+/* ===========================
+SMOOTH DROPDOWN
+=========================== */
+
+const dropdown = document.querySelector(".dropdown");
+
+if(dropdown){
+
+dropdown.addEventListener("mouseenter",()=>{
+
+    dropdown.querySelector(".dropdown-menu").style.display="block";
+
+});
+
+dropdown.addEventListener("mouseleave",()=>{
+
+    dropdown.querySelector(".dropdown-menu").style.display="none";
+
+});
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========================
+ACTIVE NAV
+=========================== */
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll(".navbar a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+if(window.scrollY>=section.offsetTop-150){
+
+current=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active-nav");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active-nav");
+
+}
+
+});
+
+});
+
+
+
+
+</script>
+
+</body>
+
+</html>
